@@ -1,6 +1,6 @@
 function generate_year_range(start, end) {
-    var years = "";
-    for (var year = start; year <= end; year++) {
+    let years = "";
+    for (let year = start; year <= end; year++) {
         years += "<option value='" + year + "'>" + year + "</option>";
     }
     return years;
@@ -12,20 +12,20 @@ currentYear = today.getFullYear();
 
 createYear = generate_year_range(2000, currentYear);
 
-var calendar = document.getElementById("calendar");
-var lang = calendar.getAttribute('data-lang');
+let calendar = document.getElementById("calendar");
+let lang = calendar.getAttribute('data-lang');
 
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-var dayName = ["Sunday","Monday","Tuesday","Wednasday","Thursday","Friday","Saturday"];
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let dayName = ["Sunday","Monday","Tuesday","Wednasday","Thursday","Friday","Saturday"];
 
 if (lang == "br") {
     months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     days = ["Dom.", "Seg.", "Ter.", "Qua.", "Qui.", "Sex.", "Sab."];
-    var dayName = ["Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sabado"];
+    dayName = ["Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sabado"];
 }
 
-var $dataHead = "<tr>";
+let $dataHead = "<tr>";
 for (dhead in days) {
     $dataHead += "<th data-days='" + days[dhead] + "'>" + days[dhead] + "</th>";
 }
@@ -59,7 +59,7 @@ function jump() {
 
 function showCalendar(month, year) {
 
-    var firstDay = ( new Date( year, month ) ).getDay();
+    let firstDay = ( new Date( year, month ) ).getDay();
 
     tbl = document.getElementById("calendar-body");
 
@@ -68,12 +68,12 @@ function showCalendar(month, year) {
     monthHeader.innerHTML = months[month];
 
     // creating all cells
-    var date = 1;
-    for ( var i = 0; i < 6; i++ ) {
+    let date = 1;
+    for ( let i = 0; i < 6; i++ ) {
         
-        var row = document.createElement("tr");
+        let row = document.createElement("tr");
 
-        for ( var j = 0; j < 7; j++ ) {
+        for ( let j = 0; j < 7; j++ ) {
             if ( i === 0 && j < firstDay ) {
                 cell = document.createElement( "td" );
                 cellText = document.createTextNode("");
@@ -93,7 +93,7 @@ function showCalendar(month, year) {
                 // 
                 if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
                     cell.className = "date-picker selected";
-                    var fullDate = "<p>"+dayName[today.getDay()]+", "+today.getDate()+" "+months[today.getMonth()]+" "+today.getFullYear()+"</p>"  
+                    let fullDate = "<p>"+dayName[today.getDay()]+", "+today.getDate()+" "+months[today.getMonth()]+" "+today.getFullYear()+"</p>"  
                     dayDate.innerHTML = fullDate;
                 }
                 row.appendChild(cell);
