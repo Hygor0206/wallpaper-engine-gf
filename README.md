@@ -1,3 +1,5 @@
 # Web Wallpaper
 ### Target
-[image]
+[image]{walltarget.png}
+----------------------------------------------------------------
+### Made using html, css and javascript
