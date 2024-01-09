@@ -1,5 +1,5 @@
 # Web Wallpaper
 ### Target
-![](walltarget.png)
+![](.sample/walltarget.png)
 ----------------------------------------------------------------
 ### Made using html, css and javascript
