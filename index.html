@@ -6,9 +6,32 @@
     <title>Web Wallpaper</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
 </head>
-<body>
-    
+<body id="resolution">
+    <div class="container1">
+        <div class="calendar">
+            <div class="button-container-calendar">
+                <button id="previous" onclick="previous()">&#8249;</button>
+                <h3 id="monthHeader"></h3>
+                <button id="next" onclick="next()">&#8250;</button>
+                <h2 id="dayDate"></h2>
+            </div>
+            <table class="table-calendar" id="calendar" data-lang="br">
+                <thead id="thead-month"></thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        </div>
+        <div class="player" id="player">
+
+        </div>
+    </div>
+    <div class="container2">
+        <div class="clock" id="clock">
+            <p>00:00</p>
+        </div>
+    </div>
 </body>
-</html>>
+<script src='resolution.js'></script>
+<script src="caldendar.js"></script>
+<script src="player.js"></script>
+</html>
