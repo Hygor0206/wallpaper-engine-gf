@@ -15,10 +15,9 @@ body{
     background-size: 1920px 1080px;
 }
 
-.calendar {
+.calendar-container{
     background: #e6d9cd;
     padding: 3px 30px;
-    max-width: 550px;
     margin: 0 auto;
     overflow: auto;
     border-radius: 10%;
@@ -106,5 +105,10 @@ body{
     margin-bottom: 1em;
     overflow: hidden;
     clear: both;
+}
+
+.box{
+    display: flex;
+    background-color: white;
 }
 

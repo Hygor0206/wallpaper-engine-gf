@@ -8,8 +8,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body id="resolution">
-    <div class="container1">
-        <div class="calendar">
+    <div class="calendar-player">
+        <div class="calendar-container">
             <div class="button-container-calendar">
                 <div class="calendar-menu">
                     <button id="previous" onclick="previous()"><img class="arrow-button" src="img/arrowleft.png" alt="previous"></button>
@@ -23,17 +23,23 @@
                 <tbody id="calendar-body"></tbody>
             </table>
         </div>
-        <div class="player" id="player">
-            <p>PLAYER</p>
+        <div class="music-container" id="music-container">
+            <div class="box">
+                <img id="albumCoverArt" src="img/blank_song.jpg"/>
+                <div class="textBox">
+                    <div id="trackTitle" class="text">Cozy Song</div>
+                    <div id="artist" class="text">Have a wonderfull day</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container2">
-        <div class="clock" id="clock">
+    <div class="clock">
+        <div class="clock-container" id="clock">
             <p>00:00</p>
         </div>
     </div>
 </body>
 <script src='resolution.js'></script>
 <script src="caldendar.js"></script>
-<script src="player.js"></script>
-</html>
+<script src="player.js" type="module"></script>
+</html>white !important;
