@@ -4,7 +4,6 @@
     margin: 0;
 }
 
-
 body{
     background-image: url("img/background.jpg");
     background-repeat: no-repeat;
@@ -12,45 +11,85 @@ body{
 }
 
 .fullHD{
-    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
 }
 
 .calendar {
-    background: #ffffff;
-    padding: 15px;
-    max-width: 30vw;
+    background: #e6d9cd;
+    padding: 3px 30px;
+    max-width: 550px;
     margin: 0 auto;
     overflow: auto;
     border-radius: 10%;
 }
 
+.calendar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5vh;
+}
+
+.calendar-menu h1{
+    padding-top: 0.6vh;
+    font-size: 3.4em;
+    margin: 0 2vw 0 2vw;
+    font-weight: 300;
+}
+
+.button-container-calendar{
+    text-align: center;
+}
+
+.arrow-button{
+    width: 30px;
+    height: auto;
+}
+
 .button-container-calendar button {
     cursor: pointer;
     display: inline-block;
-    zoom: 1;
-    color: black;
-    border: 1px solid #0aa2b5;
-    border-radius: 4px;
     padding: 5px 10px;
+    border: none;
+    background: #e6d9cd;
+    border-radius: 10px;
+    transition: background 0.3s ease;
 }
 
 .button-container-calendar button:hover{
-    color: red;
+    background-color: #dacec2;
+}
+
+.button-container-calendar h2{
+    font-weight: lighter;
+    font-size: 1.8em;
+    margin-bottom: 2vh;
+}
+
+.button-container-calendar p{
+    font-weight: 100;
+}
+
+.button-container-calendar h2, .table-calendar th, .table-calendar td{
+    color: #605a56;
 }
 
 .table-calendar {
     border-collapse: collapse;
     width: 100%;
+    overflow: hidden;
 }
 
 .table-calendar th{
     padding: 0px;
+    font-size: 1.4em;
+    font-weight: lighter;
 }
 
 .table-calendar td{
-    padding: 28px;
+    padding: 22px;
+    font-size: 1.2em;
     text-align: center;
     vertical-align: top;
     border-spacing: 0;
@@ -58,13 +97,8 @@ body{
 
 .date-picker.selected {
     font-weight: bold;
-    background-color: brown;
-    border-radius: 50px;
-}
-
-#monthAndYear {
-    text-align: center;
-    margin-top: 0;
+    background-color: #bfac9e;
+    border-radius: 50%;
 }
 
 .button-container-calendar {

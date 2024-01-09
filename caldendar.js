@@ -16,12 +16,12 @@ let calendar = document.getElementById("calendar");
 let lang = calendar.getAttribute('data-lang');
 
 let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
 let dayName = ["Sunday","Monday","Tuesday","Wednasday","Thursday","Friday","Saturday"];
 
 if (lang == "br") {
     months = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
-    days = ["Dom.", "Seg.", "Ter.", "Qua.", "Qui.", "Sex.", "Sab."];
+    days = ["dom", "seg", "ter", "qua", "qui", "sex", "sab"];
     dayName = ["Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sabado"];
 }
 
@@ -90,7 +90,6 @@ function showCalendar(month, year) {
                 cell.className = "date-picker";
                 cell.innerHTML = "<span>" + date + "</span>";
 
-                // 
                 if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
                     cell.className = "date-picker selected";
                     let fullDate = "<p>"+dayName[today.getDay()]+", "+today.getDate()+" "+months[today.getMonth()]+" "+today.getFullYear()+"</p>"  

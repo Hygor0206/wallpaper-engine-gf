@@ -11,18 +11,20 @@
     <div class="container1">
         <div class="calendar">
             <div class="button-container-calendar">
-                <button id="previous" onclick="previous()">&#8249;</button>
-                <h3 id="monthHeader"></h3>
-                <button id="next" onclick="next()">&#8250;</button>
+                <div class="calendar-menu">
+                    <button id="previous" onclick="previous()"><img class="arrow-button" src="img/arrowleft.png" alt="previous"></button>
+                    <h1 id="monthHeader"></h1>
+                    <button id="next" onclick="next()"><img class="arrow-button" src="img/arrowright.png" alt="next"></button>
+                </div>
                 <h2 id="dayDate"></h2>
             </div>
-            <table class="table-calendar" id="calendar" data-lang="br">
+            <table class="table-calendar" id="calendar" data-lang="en">
                 <thead id="thead-month"></thead>
                 <tbody id="calendar-body"></tbody>
             </table>
         </div>
         <div class="player" id="player">
-
+            <p>PLAYER</p>
         </div>
     </div>
     <div class="container2">
