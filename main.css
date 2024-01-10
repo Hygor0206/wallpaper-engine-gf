@@ -41,12 +41,13 @@ body{
     overflow: auto;
     border-radius: 30px;
     height: 55vh;
+    box-shadow: 14px 14px rgb(192,166,131, 0.40);
 }
 
 .calendar-menu{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 1.4vh;
     margin-bottom: 1.5vh;
 }
@@ -83,7 +84,7 @@ body{
 
 .button-container-calendar h2{
     font-weight: lighter;
-    font-size: 1.8em;
+    font-size: 1.4rem;
     margin-bottom: 1.5vh;
 }
 
@@ -103,13 +104,13 @@ body{
 
 .table-calendar th{
     padding: 3px 20px;
-    font-size: 1.5em;
+    font-size: 1.2rem;
     font-weight: lighter;
 }
 
 .table-calendar td{
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1rem;
     text-align: center;
     vertical-align: top;
     border-spacing: 0;
@@ -130,7 +131,8 @@ body{
 
 .box{
     display: flex;
-    background-color: #e6d9cd;
+    /* background-color: rgb(230,217,205, 0.65); */
+    background-color: rgb(241, 237, 232, 0.65);
     padding: 1.7vw;
     border-radius: 30px;
 }
@@ -150,6 +152,6 @@ body{
 }
 
 .text{
-    font-size: 1.5em;
+    font-size: 1.3rem;
     margin-left: 2vw;
 }
