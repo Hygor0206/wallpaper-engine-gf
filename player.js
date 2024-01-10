@@ -5,7 +5,13 @@ let artist = null;
 function wallpaperMediaPropertiesListener(event) {
 	// Update title and artist labels
 	trackTitle.textContent = event.title;
+	if(event.title == ""){
+		trackTitle.textContent = "Cozy Song";
+	}
 	artist.textContent = event.artist;
+	if(event.artist == ""){
+		artist.textContent = "Have a wonderfull day";
+	}
 }
 function wallpaperMediaThumbnailListener(event) {
 	// Update album cover art

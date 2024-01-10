@@ -8,34 +8,37 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
 <body id="resolution">
-    <div class="calendar-player">
-        <div class="calendar-container">
-            <div class="button-container-calendar">
-                <div class="calendar-menu">
-                    <button id="previous" onclick="previous()"><img class="arrow-button" src="img/arrowleft.png" alt="previous"></button>
-                    <h1 id="monthHeader"></h1>
-                    <button id="next" onclick="next()"><img class="arrow-button" src="img/arrowright.png" alt="next"></button>
+    <div class="wallpaper-body">
+        <div class="calendar-player">
+            <div class="calendar-container">
+                <div class="button-container-calendar">
+                    <div class="calendar-menu">
+                        <button id="previous" onclick="previous()"><img class="arrow-button" src="img/arrowleft.png" alt="previous"></button>
+                        <h1 id="monthHeader"></h1>
+                        <button id="next" onclick="next()"><img class="arrow-button" src="img/arrowright.png" alt="next"></button>
+                    </div>
+                    <h2 id="dayDate"></h2>
                 </div>
-                <h2 id="dayDate"></h2>
+                <table class="table-calendar" id="calendar" data-lang="en">
+                    <thead id="thead-month"></thead>
+                    <tbody id="calendar-body"></tbody>
+                </table>
             </div>
-            <table class="table-calendar" id="calendar" data-lang="en">
-                <thead id="thead-month"></thead>
-                <tbody id="calendar-body"></tbody>
-            </table>
-        </div>
-        <div class="music-container" id="music-container">
-            <div class="box">
-                <img id="albumCoverArt"/>
-                <div class="textBox">
-                    <div id="trackTitle" class="text">Cozy Song</div>
-                    <div id="artist" class="text">Have a wonderfull day</div>
+            <div class="music-container" id="music-container">
+                <div class="box">
+                    <!-- <div class="circle"></div> -->
+                    <img id="albumCoverArt" src="img/blank_song.jpg"/>
+                    <div class="textBox">
+                        <div id="trackTitle" class="text">Cozy Song</div>
+                        <div id="artist" class="text">Have a wonderfull day</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="clock">
-        <div class="clock-container" id="clock">
-            <p>00:00</p>
+        <div class="clock">
+            <div class="clock-container" id="clock">
+                <p>00:00</p>
+            </div>
         </div>
     </div>
 </body>

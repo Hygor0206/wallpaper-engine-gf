@@ -4,10 +4,16 @@
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body{
     background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: 1366px 768px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
 .fullHD{
@@ -15,18 +21,33 @@ body{
     background-size: 1920px 1080px;
 }
 
+.wallpaper-body{
+    display: flex;
+    justify-content: space-between;
+    margin: 11.5vh 21.5vw 6.5vh 6vw;
+}
+
+.calendar-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 78.45vh;
+}
+
 .calendar-container{
     background: #e6d9cd;
-    padding: 3px 30px;
+    padding: 1vh 2.5vw;
     margin: 0 auto;
     overflow: auto;
-    border-radius: 10%;
+    border-radius: 30px;
+    height: 55vh;
 }
 
 .calendar-menu{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1.4vh;
     margin-bottom: 1.5vh;
 }
 
@@ -63,7 +84,7 @@ body{
 .button-container-calendar h2{
     font-weight: lighter;
     font-size: 1.8em;
-    margin-bottom: 2vh;
+    margin-bottom: 1.5vh;
 }
 
 .button-container-calendar p{
@@ -81,13 +102,13 @@ body{
 }
 
 .table-calendar th{
-    padding: 0px;
-    font-size: 1.4em;
+    padding: 3px 20px;
+    font-size: 1.5em;
     font-weight: lighter;
 }
 
 .table-calendar td{
-    padding: 22px;
+    padding: 20px;
     font-size: 1.2em;
     text-align: center;
     vertical-align: top;
@@ -109,7 +130,26 @@ body{
 
 .box{
     display: flex;
-    background-color: white;
+    background-color: #e6d9cd;
+    padding: 1.7vw;
+    border-radius: 30px;
 }
 
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #555;
+    position: relative;
+}
 
+#albumCoverArt{
+    width: 8vw;
+    border: solid 5px #605a56;
+    /* position: absolute; */
+}
+
+.text{
+    font-size: 1.5em;
+    margin-left: 2vw;
+}
